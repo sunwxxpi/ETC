@@ -38,14 +38,15 @@
 # print("Today's temperature is %.1f and humidity is %d%%" %(temp, humid))
 
 
-# print("Today's weather is {}".format(weather))
-# print("Today's temperature is {:.1f} and humidity is {:.2f}%".format(temp, humid))
-
 weather = 'sunny'
 temp = 15.321
 humid = 23
-# print(f"Today's weather is {weather}")
-# print(f"Today's temperature is {temp:.1f} and humidity is {humid:.3f}%")
+
+# print("Today's weather is {}".format(weather))
+# print("Today's temperature is {:.1f} and humidity is {:.2f}%".format(temp, humid))
+
+print(f"Today's weather is {weather}")
+print(f"Today's temperature is {temp:.1f} and humidity is {humid:.3f}%")
 
 
 odd = [1, 2, 3, ["one", "two", "three", ["hello", "hello2"]], 4, 3.2, ["five"]]

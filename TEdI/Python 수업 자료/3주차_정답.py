@@ -132,9 +132,11 @@ else:
 if isinstance(123, int):
     print("It's int") """
     
-""" str1 = "pi"
+str1 = "pi"
 str2 = "sun"
-print(str1, str2, sep=' ', end='\n') """
+print(str1, end='')
+print(str2, end='')
+
 
 """ import turtle as t
 
@@ -175,7 +177,7 @@ t.forward(100) """
 
 
 """ # 연습문제
-#1. 
+# 1. 
 a = int(input("하나의 정수를 입력하세요"))
 if a % 3 == 0 or a % 5 == 0 :
     print("%d 는 3의 배수이면서 5의 배수입니다"% a)

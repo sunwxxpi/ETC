@@ -482,3 +482,18 @@ print(os.getcwd())
 
 # 5. sys.path에 import 가능한 Module 경로를 추가
 sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(__file__)))) """
+
+""" name = ['psw', 'phw', 'No Haha']
+yearning = [3, 6]
+
+dictionary = dict(zip(name, yearning))
+print(dictionary) """
+
+""" def solution(names, yearning, photos):
+    return [sum(yearning[names.index(name)] for name in photo if name in names) for photo in photos]
+
+names = ['psw', 'phw']
+yearning = [3, 8]
+photos = [['psw']]
+
+print(yearning[names.index('psw')]) """
