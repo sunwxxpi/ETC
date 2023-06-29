@@ -497,3 +497,22 @@ yearning = [3, 8]
 photos = [['psw']]
 
 print(yearning[names.index('psw')]) """
+
+""" str_list = ['There', 'is', 4, "items"]
+result = ' '.join(map(str, str_list))
+print(result) """
+
+""" list1 = ["a", "b", "c"]
+list2 = list1
+list3 = list1.copy()
+list1.append("d")
+print(list2)
+print(list3) """
+
+""" cards1 = []
+if len(cards1) > 0 and "haha" in cards1[0]:
+# if "haha" in cards1[0] and len(cards1) > 0:
+    del cards1[0]
+    print("if")
+else:
+    print("else") """
