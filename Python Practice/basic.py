@@ -217,6 +217,7 @@ print(all(np.array([20, 40, 50]) < 45)) """
 """ print(round(12343.123, -1))
 print(round(12343.123, 0))
 print(round(12343.123, 1))
+print(round(12343.125, 2)) # round()에서는 반올림할 때, 5는 내림 처리. 왜냐? 사실 4988877이기 때문. NumPy에서는 올림 처리.
 # 소수 첫 째 자리가 기준 (0) """
 
 """ for number, upper, lower in zip("12345", "ABC", "abcd"):
@@ -516,3 +517,17 @@ if len(cards1) > 0 and "haha" in cards1[0]:
     print("if")
 else:
     print("else") """
+    
+""" import numpy as np
+
+list = [[0, 23], [1, 21], [2, 22]]
+list.sort(key=lambda x: x[1])
+print(list)
+
+print(list[-1:-3])
+print(list[-1:]) # 착각하지 말자. 역순으로 처음부터 끝까지가 아니라 마지막 것부터 끝까지이다. """
+
+""" import math
+
+print(math.trunc(7.14))
+print(math.trunc(-7.14)) # 소수 부분만 제거 """
