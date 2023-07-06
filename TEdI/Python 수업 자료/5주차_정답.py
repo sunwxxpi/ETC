@@ -1,4 +1,80 @@
-# 연습문제
+""" print("기능을 선택하세요")
+print("1. 더하기", "2. 빼기", "3. 곱하기", "4. 나누기", sep='\n')
+feature = int(input("계산기 기능을 선택하세요(1, 2, 3, 4): "))
+
+num1 = int(input("첫 번째 숫자를 입력하세요: "))
+num2 = int(input("두 번째 숫자를 입력하세요: "))
+
+if feature == 1:
+    print(f"{num1} + {num2} = {num1 + num2}")
+elif feature == 2:
+    print(f"{num1} - {num2} = {num1 - num2}")
+elif feature == 3:
+    print(f"{num1} x {num2} = {num1 * num2}")
+elif feature == 4:
+    print(f"{num1} / {num2} = {num1 / num2}") """
+
+
+'''num1 = int(input("첫 번째 정수를 입력하세요: "))
+num2 = int(input("두 번째 정수를 입력하세요: "))
+num3 = int(input("세 번째 정수를 입력하세요: "))
+
+""" max_num = num1
+if num1 < num2:
+    max_num = num2
+    if num2 < num3:
+        max_num = num3
+else:
+    if num1 < num3:
+        max_num = num3 """
+
+""" my_list = [num1, num2, num3]
+max_num = my_list[0]
+
+for i in my_list[1:]:
+    if i > max_num:
+        max_num = i """
+        
+""" max_num = max(num1, num2, num3) """
+
+print(f"입력된 세 수 {num1}, {num2}, {num3}중에서 가장 큰수는 {max_num}입니다.")'''
+################################ max 변수 쓰지 말기 ################################
+
+
+################################ pass ################################
+""" unit = input("단위를 입력해 주세요(섭씨 또는 화씨): ")
+temp = int(input("온도를 입력해 주세요: "))
+
+if unit == '섭씨':
+    pass
+elif unit == '화씨':
+    temp = (temp - 32) * (5 / 9)
+
+if temp < 0:
+    state = '고체'
+elif temp >= 100:
+    state = '기체'
+else:
+    state = '액체'
+        
+print(f"물의 섭씨 온도: {round(temp, 0):.0f}도, 상태는 {state}") """
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+""" # 연습문제
 
 # 1 
 import random
@@ -99,6 +175,4 @@ while True :
     if flag :
         print("%s은 거꾸로 정수입니다"% a)
     else :
-        print("%s은 거꾸로 정수가 아닙니다" %a )
-    
-            
+        print("%s은 거꾸로 정수가 아닙니다" %a ) """
