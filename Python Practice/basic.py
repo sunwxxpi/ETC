@@ -531,3 +531,13 @@ print(list[-1:]) # 착각하지 말자. 역순으로 처음부터 끝까지가 �
 
 print(math.trunc(7.14))
 print(math.trunc(-7.14)) # 소수 부분만 제거 """
+
+""" a = None
+b = "Hello"
+result = a or b
+print(result)  # 출력: Hello
+
+a = [1, 2, 3]
+b = [4, 5, 6]
+result = a or b
+print(result)  # 출력: [1, 2, 3] """

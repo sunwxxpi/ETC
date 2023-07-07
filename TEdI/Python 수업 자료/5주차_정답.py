@@ -60,10 +60,76 @@ else:
 print(f"물의 섭씨 온도: {round(temp, 0):.0f}도, 상태는 {state}") """
 
 
+'''num1 = int(input("첫 번째 정수를 입력하세요: "))
+num2 = int(input("두 번째 정수를 입력하세요: "))
+x = int(input("원하는 배수를 입력하세요: "))
+sum = 0
+
+""" for num in range(num1, num2 + 1):
+    if num % x == 0:
+        sum += num """
+        
+""" for num in range(num1, num2 + 1, x):
+    sum += num """
+        
+print(f"{num1}에서 {num2}까지의 정수 중 {x}의 배수 합계는 {sum}입니다.")'''
+################################ Complexity ################################
 
 
+'''year = int(input("년도를 입력하세요: "))
+
+if year % 4 == 0:
+    if year % 100 != 0:
+        year_type = '윤년o'
+    else:
+        if year % 400 == 0:
+            year_type = '윤년o'
+        else:
+            year_type = '윤년x'
+else:
+    year_type = '윤년x'
+    
+""" if (year % 4 == 0 and year % 100 != 0) or year % 400 == 0:
+    year_type = '윤년o'
+else:
+    year_type = '윤년x' """
+    
+print(year_type)
+
+# print('윤년o' if ((year % 4 == 0 and year % 100 != 0) or year % 400 == 0) else '윤년x')'''
+    
+
+""" import random
+
+a = random.randint(1, 5)
+print(a)
+
+my_list = [1, 2, 3, 4, 5]
+b = random.choice(my_list)
+print(b)
+
+# random.seed(10)
+your_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+random.shuffle(your_list)
+print(your_list) """
 
 
+'''stage = 1
+sum = 0
+
+while stage <= 5:
+    sum += stage
+    stage += 1
+    
+""" while True:
+    sum += stage
+    stage += 1
+    
+    if stage > 5:
+        break """
+    
+print(sum)
+'''
 
 
 
