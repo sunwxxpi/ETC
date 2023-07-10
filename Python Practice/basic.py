@@ -429,12 +429,10 @@ print(dict(counter))
 print(list(counter)) # list(dictionary 객체) >> [dictionary key값] """
 
 """ from math import gcd, lcm
-# Greatest Common Divisor (최대 공약수)
-# Least Common Multiple (최소 공배수)
 
 a, b = 21, 14
-print(gcd(a, b))
-print(lcm(a, b))
+print(gcd(a, b)) # Greatest Common Divisor (최대 공약수)
+print(lcm(a, b)) # Least Common Multiple (최소 공배수)
 print((lambda a, b: gcd(a, b) * (a // gcd(a, b)) * (b // gcd(a, b)))(a, b)) """
 
 """ result = [x * y for x in range(2,10) for y in range(1,10)]
@@ -541,3 +539,5 @@ a = [1, 2, 3]
 b = [4, 5, 6]
 result = a or b
 print(result)  # 출력: [1, 2, 3] """
+
+""" small = b if a > b else a """
