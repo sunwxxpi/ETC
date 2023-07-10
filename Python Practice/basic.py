@@ -423,12 +423,10 @@ print(dict(counter))
 print(list(counter)) # list(dictionary 객체) >> [dictionary key값] """
 
 """ from math import gcd, lcm
-# Greatest Common Divisor (최대 공약수)
-# Least Common Multiple (최소 공배수)
 
 a, b = 21, 14
-print(gcd(a, b))
-print(lcm(a, b))
+print(gcd(a, b)) # Greatest Common Divisor (최대 공약수)
+print(lcm(a, b)) # Least Common Multiple (최소 공배수)
 print((lambda a, b: gcd(a, b) * (a // gcd(a, b)) * (b // gcd(a, b)))(a, b)) """
 
 """ result = [x * y for x in range(2,10) for y in range(1,10)]
@@ -510,4 +508,34 @@ if len(cards1) > 0 and "haha" in cards1[0]:
     del cards1[0]
     print("if")
 else:
+<<<<<<< HEAD
     print("else") """
+=======
+    print("else") """
+    
+""" import numpy as np
+
+list = [[0, 23], [1, 21], [2, 22]]
+list.sort(key=lambda x: x[1])
+print(list)
+
+print(list[-1:-3])
+print(list[-1:]) # 착각하지 말자. 역순으로 처음부터 끝까지가 아니라 마지막 것부터 끝까지이다. """
+
+""" import math
+
+print(math.trunc(7.14))
+print(math.trunc(-7.14)) # 소수 부분만 제거 """
+
+""" a = None
+b = "Hello"
+result = a or b
+print(result)  # 출력: Hello
+
+a = [1, 2, 3]
+b = [4, 5, 6]
+result = a or b
+print(result)  # 출력: [1, 2, 3] """
+
+""" small = b if a > b else a """
+>>>>>>> 2ddee211deaf446ed9c2bb86ae70e7af7f8702b7

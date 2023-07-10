@@ -12,37 +12,41 @@ elif feature == 2:
 elif feature == 3:
     print(f"{num1} x {num2} = {num1 * num2}")
 elif feature == 4:
-    print(f"{num1} / {num2} = {num1 / num2}") """
+    print(f"{num1} / {num2} = {num1 / num2}")
+else:
+    print("오류입니다.") """
 
 
 '''num1 = int(input("첫 번째 정수를 입력하세요: "))
 num2 = int(input("두 번째 정수를 입력하세요: "))
 num3 = int(input("세 번째 정수를 입력하세요: "))
 
-""" max_num = num1
-if num1 < num2:
-    max_num = num2
-    if num2 < num3:
-        max_num = num3
-else:
-    if num1 < num3:
-        max_num = num3 """
+my_list = [num1, num2, num3]
 
-""" my_list = [num1, num2, num3]
-max_num = my_list[0]
+""" largest = num1 # 1번이 제일 크다고 가정
+if num1 < num2: 
+    largest = num2
+    if num2 < num3:
+        largest = num3
+else: # num1 >= num2
+    if num1 < num3:
+        largest = num3 """
+
+"""
+largest = my_list[0]
 
 for i in my_list[1:]:
-    if i > max_num:
-        max_num = i """
-        
-""" max_num = max(num1, num2, num3) """
+    if i > largest:
+        largest = i """
+      
+""" my_list = [num1, num2, num3]
+largest = max(my_list) """
 
-print(f"입력된 세 수 {num1}, {num2}, {num3}중에서 가장 큰수는 {max_num}입니다.")'''
-################################ max 변수 쓰지 말기 ################################
+print(f"입력된 세 수 {num1}, {num2}, {num3}중에서 가장 큰수는 {largest}입니다.")'''
 
 
-################################ pass ################################
-""" unit = input("단위를 입력해 주세요(섭씨 또는 화씨): ")
+""" ################################ pass ################################
+unit = input("단위를 입력해 주세요(섭씨 또는 화씨): ")
 temp = int(input("온도를 입력해 주세요: "))
 
 if unit == '섭씨':
@@ -59,7 +63,6 @@ else:
         
 print(f"물의 섭씨 온도: {round(temp, 0):.0f}도, 상태는 {state}") """
 
-
 '''num1 = int(input("첫 번째 정수를 입력하세요: "))
 num2 = int(input("두 번째 정수를 입력하세요: "))
 x = int(input("원하는 배수를 입력하세요: "))
@@ -69,16 +72,16 @@ sum = 0
     if num % x == 0:
         sum += num """
         
-""" for num in range(num1, num2 + 1, x):
+""" for num in range(num1, num2 + 1, 5):
     sum += num """
         
-print(f"{num1}에서 {num2}까지의 정수 중 {x}의 배수 합계는 {sum}입니다.")'''
-################################ Complexity ################################
+print(f"{num1}에서 {num2}까지의 정수 중 {x}의 배수 합계는 {sum}입니다.")
+################################ Complexity ################################'''
 
 
 '''year = int(input("년도를 입력하세요: "))
 
-if year % 4 == 0:
+""" if year % 4 == 0:
     if year % 100 != 0:
         year_type = '윤년o'
     else:
@@ -87,49 +90,48 @@ if year % 4 == 0:
         else:
             year_type = '윤년x'
 else:
-    year_type = '윤년x'
+    year_type = '윤년x' """
     
 """ if (year % 4 == 0 and year % 100 != 0) or year % 400 == 0:
     year_type = '윤년o'
 else:
     year_type = '윤년x' """
     
-print(year_type)
+# print(year_type)
 
 # print('윤년o' if ((year % 4 == 0 and year % 100 != 0) or year % 400 == 0) else '윤년x')'''
     
 
 """ import random
 
-a = random.randint(1, 5)
-print(a)
+# a = random.randint(1, 5)
+# print(a)
 
-my_list = [1, 2, 3, 4, 5]
-b = random.choice(my_list)
-print(b)
+# my_list = [1, 2, 3]
+# b = random.choice(my_list)
+# print(b)
 
-# random.seed(10)
-your_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+random.seed(12983712897321)
+your_list = [1, 2, 3]
 random.shuffle(your_list)
 print(your_list) """
 
 
-'''stage = 1
+stage = 1
 sum = 0
 
-while stage <= 5:
+""" while stage <= 5:
     sum += stage
-    stage += 1
+    stage += 1 """
     
-""" while True:
+while True:
     sum += stage
     stage += 1
     
     if stage > 5:
-        break """
+        break
     
 print(sum)
-'''
 
 
 
