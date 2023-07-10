@@ -508,9 +508,6 @@ if len(cards1) > 0 and "haha" in cards1[0]:
     del cards1[0]
     print("if")
 else:
-<<<<<<< HEAD
-    print("else") """
-=======
     print("else") """
     
 """ import numpy as np
@@ -538,4 +535,3 @@ result = a or b
 print(result)  # 출력: [1, 2, 3] """
 
 """ small = b if a > b else a """
->>>>>>> 2ddee211deaf446ed9c2bb86ae70e7af7f8702b7
