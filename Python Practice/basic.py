@@ -264,18 +264,12 @@ list1 = [1, 2, 3, 4, 5]
 list2 = [6, 7, 8, 9, 10]
 print(list1 + list2) """
 
-""" index_array = np.array([2, 4, 5])
+""" import numpy as np
+
+index_array = np.array([2, 4, 5])
 array1 = np.array([11, 12, 13, 14, 15, 16])
 
 print(array1[index_array]) """
-
-""" import time
-
-start_time = time.time()
-# Program
-end_time = time.time()
-
-print("Time:", end_time - start_time) """
 
 """ a, b, c = 1e9, 75.25e1, 3954e-3 # 지수 표현 방식은 실수 자료형으로 처리
 print(a, b, c) """
@@ -517,27 +511,3 @@ if len(cards1) > 0 and "haha" in cards1[0]:
     print("if")
 else:
     print("else") """
-    
-""" import numpy as np
-
-list = [[0, 23], [1, 21], [2, 22]]
-list.sort(key=lambda x: x[1])
-print(list)
-
-print(list[-1:-3])
-print(list[-1:]) # 착각하지 말자. 역순으로 처음부터 끝까지가 아니라 마지막 것부터 끝까지이다. """
-
-""" import math
-
-print(math.trunc(7.14))
-print(math.trunc(-7.14)) # 소수 부분만 제거 """
-
-""" a = None
-b = "Hello"
-result = a or b
-print(result)  # 출력: Hello
-
-a = [1, 2, 3]
-b = [4, 5, 6]
-result = a or b
-print(result)  # 출력: [1, 2, 3] """
