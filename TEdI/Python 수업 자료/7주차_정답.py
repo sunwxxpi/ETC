@@ -1,5 +1,125 @@
-# 연습문제
-# 1
+""" my_tuple = (1, 2, 3)
+print(type(my_tuple))
+print(isinstance(my_tuple, tuple)) """
+
+
+""" my_tuple = (1, 2, 3)
+my_tuple[1] = 8 """
+
+
+""" a, b, c = [1, 2, 3]
+print(f"a is {a}, b is {b}, c is {c}")
+
+a, b, c = (1, 2, 3)
+print(f"a is {a}, b is {b}, c is {c}")
+
+a = [1, 2, 3]
+b = (1, 2, 3)
+c = 1, 2, 3
+print(f"a is {a}, b is {b}, c is {c}")
+
+d = 1, 2, 3
+a, b, c = d
+print(f"a is {a}, b is {b}, c is {c}") """
+
+""" x = 10
+y = 25
+
+z = x
+x = y
+y = z
+print(x, y)
+
+# x, y = 10, 25
+# x, y = y, x
+# print(x, y) """
+
+
+""" # 논리 표현식의 단축 평가(Short-circuit Evaluation)
+x = 25
+# x = 10
+if x == (10 or 25):
+    print(True)
+else:
+    print(False)
+    
+# True -> or : 왼, and : 오
+# False -> or : 오, and : 외
+print(3 or 5)
+print(3 and 5) """
+
+
+""" def fc_layer(in_features, hidden_features=None):
+    hidden_features = hidden_features or in_features
+
+def example_function_1(arg1=5, arg2):
+    pass
+
+def example_function_2(arg1, arg2=5):
+    pass
+
+example_function_1(3)
+example_function_2(3) """
+
+
+""" x = 25
+if x == (10 or 25):
+    pass
+
+if x == 10 or x == 25:
+    pass
+
+if x in [10, 25]:
+    pass
+
+if any((x == value) for value in [10, 25]):
+    pass
+
+x = 25
+print((x == value) for value in [10, 25])
+print(list((x == value) for value in [10, 25]))
+print([(x == value) for value in [10, 25]])
+
+print(any((x == value) for value in [10, 25]))
+
+print(any([False, True, False])) # or
+print(all([False, True, False])) # and """
+
+# my_list = [value - 3 for value in [1, 3, 6, 7]]
+# print(my_list)
+
+
+# scores = {'국어': 50, '수학': 90, '생명과학': 95, '화학': 100,}
+pi_scores = {
+    '국어': 50,
+    '수학': 90,
+    '생명과학': 95,
+    '화학': 100,
+    }
+print(pi_scores)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+""" # 연습문제
+# 1-1
 weather = [('9월', 26), ('10월', 20), ('11월', 12), ('12월', 4)]
 
 max_tem = 0
@@ -17,6 +137,19 @@ for x in range(len(weather)):
 
 print("최고온도 : %s %d도" % (max_month, max_tem))
 print("최저온도 : %s %d도" % (min_month, min_tem))
+
+# 1-2
+max, min = 0, 50
+mm, nn = 'a', 'b'
+weather =  [('9월', 26), ('10월', 20), ('11월', 12), ('12월', 4)]
+
+for x, y in weather:
+  if(max < y):
+    mm, max = x, y
+  if(y < min):
+    nn,min = x, y
+print("최고 온도 : %s %d도"%(mm,max))
+print("최저 온도 : %s %d도"%(nn,min))
 
 # 2
 
@@ -97,4 +230,4 @@ while True :
             print("아이템이 없습니다") 
     elif n == '4' :
         print("프로그램 종료!") 
-        break 
+        break  """
