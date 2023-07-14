@@ -89,16 +89,84 @@ print(all([False, True, False])) # and """
 # print(my_list)
 
 
-# scores = {'국어': 50, '수학': 90, '생명과학': 95, '화학': 100,}
+""" # scores = {'국어': 50, '수학': 90, '생명과학': 95, 200: 100, 'a': my_list} # {key : value}
+my_list = [4, 5, 6]
 pi_scores = {
     '국어': 50,
     '수학': 90,
     '생명과학': 95,
-    '화학': 100,
+    200: 100,
+    'a': my_list
     }
 print(pi_scores)
 
+print(pi_scores['a'][1]) """
 
+
+""" pi_scores = {
+    '국어': 50,
+    '수학': 90,
+    '생명과학': 95,
+    }
+
+pi_scores['수학'] = 40 # Value 변경
+print(pi_scores)
+
+del pi_scores['생명과학'] # Key : Value 삭제
+print(pi_scores)
+
+pi_scores['사회'] = 25 # Key : Value 추가
+print(pi_scores) """
+
+
+""" pi_scores = {
+    '국어': 50,
+    '수학': 90,
+    '생명과학': 95,
+    }
+
+print(pi_scores.keys())
+print(pi_scores.values())
+print(list(pi_scores.keys()))
+print(list(pi_scores.values())) """
+
+
+""" pi_scores = {
+    '국어': 50,
+    '수학': 90,
+    '생명과학': 95,
+    }
+
+print(list(pi_scores.items()))
+
+# for item in pi_scores.items():
+    # print(item)
+
+# for item in pi_scores.items():
+    # print(f"key is {item[0]}")
+    # print(f"key is {item[1]}")
+    # print()
+    
+# for key, value in pi_scores.items():
+    # print(key, 'and', value) """
+
+    
+""" my_list = [
+    [1, 2, 3],
+    [4, 5, 6]
+    ]
+for a, b, c in my_list:
+    print(a, b, c)
+
+# for a, b in my_list:
+    # print(a, b) """
+    
+
+""" name = ['psw', 'phw', 'No Haha']
+yearning = [3, 6, 'hello', 4]
+
+dictionary = dict(zip(name, yearning))
+print(dictionary) """
 
 
 
