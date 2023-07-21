@@ -65,11 +65,15 @@ f.close() """
 
 """ f = open('list.txt', 'r', encoding='utf8')
 for line in f:
-    print(line, end='')
+    print(line.rstrip())
+    # print(line, end='')
 f.close()
 
 f = open('list.txt', 'r', encoding='utf8')
+# f.seek(0)
 contents = f.read()
+# contents = f.readline().rstrip()
+# contents = f.readlines()
 print(contents)
 f.close() """
 
@@ -78,6 +82,22 @@ f.close() """
     f.write('피선우\n')
     f.write('김선우\n')
     f.write('피선우\n') """
+    
+""" import pickle
+
+gameOption = {
+    "Sound": 8,
+    "VideoQuality": "HIGH", 
+    "Money": 100000,
+    "WeaponList": ["gun", "missile", "knife"]
+    }
+
+with open("game.txt", "wb" ) as file:
+    pickle.dump(gameOption, file) # Dict를 pickle File에 저장
+
+with open("game.txt", "rb") as f:
+    data = pickle.load(f)
+    print(data) """
     
 """ class BlackBox():
     def __init__(self, name, price): # 객체가 생성될 때
@@ -357,8 +377,11 @@ print(a - b) """
 
 """ from sys import stdin
 
-data = stdin.readline().rstrip()
-print(data)
+data_1 = stdin.readline().rstrip()
+print(data_1)
+
+data_2 = stdin.readlines() # EOF : ctrl + d (UNIX), ctrl + z (Windows)
+print(data_2)
 
 a, b, c = map(int, stdin.readline().rstrip().split())
 print(a, b, c) """

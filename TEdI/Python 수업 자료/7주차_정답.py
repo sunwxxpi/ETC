@@ -44,7 +44,7 @@ else:
     print(False)
     
 # True -> or : 왼, and : 오
-# False -> or : 오, and : 외
+# False -> or : 오, and : 왼
 print(3 or 5)
 print(3 and 5) """
 

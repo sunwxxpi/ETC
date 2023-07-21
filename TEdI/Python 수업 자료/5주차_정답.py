@@ -117,7 +117,7 @@ random.shuffle(your_list)
 print(your_list) """
 
 
-stage = 1
+'''stage = 1
 sum = 0
 
 """ while stage <= 5:
@@ -131,7 +131,7 @@ while True:
     if stage > 5:
         break
     
-print(sum)
+print(sum)'''
 
 
 
