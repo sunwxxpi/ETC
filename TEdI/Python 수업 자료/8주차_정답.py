@@ -1,24 +1,36 @@
 """ # 논리 표현식의 단축 평가(Short-circuit Evaluation)
-x = 10
-# x = 25
+# x = 10
+x = 25
 print(x == (10 or 25))
-    
+
+# <and>
+# TT T
+# TF F
+# FT F
+# FF F
+
+# <or>
+# TT T
+# TF T
+# FT T
+# FF F    
 # True -> or : 왼, and : 오
 # False -> or : 오, and : 왼
-print(3 or 5)
-print(3 and 5)
-print(None or 5)
-print(None and 5)
+print(3 or 5) # 3
+print(3 and 5) # 5
+print(None or 5) # 5
+print(None and 5) # None
 
-print(3 and None and 4) """
+print(3 and None and 4) # None
+print(bool(None)) """
 
 
-""" def return_x(x=None):
+""" def return_var(x=None):
     var = x
     
     return var
 
-y = return_x(2) or 3
+y = return_var(5) or 3
 print(y) """
 
 
@@ -28,7 +40,7 @@ f.write('TEdI\n')
 f.close() """
 
 
-""" f = open('/Users/pisunwoo/Project Code/ETC/TEdI/Python 수업 자료/list.txt', 'r', encoding='utf8')
+""" f = open('8주차_list.txt', 'r', encoding='utf8')
 print(f)
 
 for line in f:
@@ -38,16 +50,17 @@ for line in f:
 f.close() """
 
 
-""" f = open('list.txt', 'r', encoding='utf8')
+""" f = open('8주차_list.txt', 'r', encoding='utf8')
 # f.seek(0)
-contents = f.read()
+# contents = f.read()
 # contents = f.readline().rstrip()
-# contents = f.readlines()
-print(contents)
-f.close()
- """
+contents = f.readlines()
 
-""" with open('8주차_list2.txt', 'w', encoding='utf8') as f: # File 없으면 자동으로 생성, 있으면 내용 초기화 후 write
+print(contents)
+f.close() """
+
+""" # File 없으면 자동으로 생성, 있으면 내용 초기화 후 write
+with open('8주차_list2.txt', 'w', encoding='utf8') as f:
     f.write('피선우\n')
     f.write('양재원\n')
     f.write('장한서\n') """
@@ -64,8 +77,8 @@ f.close()
 """ # good book friend
 with open("8주차_list3.txt", "r", encoding="UTF8") as f:
     for line in f:
-        line = line.rstrip()
-        print(line)
+        # line = line.rstrip()
+        # print(line)
         
         word_list = line.split()
         print(word_list)
@@ -75,7 +88,7 @@ with open("8주차_list3.txt", "r", encoding="UTF8") as f:
 
 
 """ in_file_name = input("입력 파일 이름 : ")
-out_file_name = input("출력 파일 이름 :")
+out_file_name = input("출력 파일 이름 : ")
 
 infile = open(in_file_name, "r")
 outfile = open(out_file_name, "w")
@@ -96,13 +109,22 @@ gameOption = {
     "WeaponList": ["gun", "missile", "knife"]
     }
 
-with open("game.txt", "wb" ) as file:
-    pickle.dump(gameOption, file) # Dict를 pickle File에 저장
+""" with open("8주차_game.txt", "wb") as file:
+    pickle.dump(gameOption, file) # Dict를 pickle File에 저장 """
 
-
-""" with open("game.txt", "rb") as f:
-    data = pickle.load(f)
+""" with open("game.txt", "rb") as file:
+    data = pickle.load(file)
     print(data) """'''
+
+
+
+
+
+
+
+
+
+
 
 
 
