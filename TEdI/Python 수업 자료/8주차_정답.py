@@ -109,8 +109,8 @@ gameOption = {
     "WeaponList": ["gun", "missile", "knife"]
     }
 
-""" with open("8주차_game.txt", "wb") as file:
-    pickle.dump(gameOption, file) # Dict를 pickle File에 저장 """
+with open("8주차_game.txt", "wb") as file:
+    pickle.dump(gameOption, file) # Dict를 pickle File에 저장
 
 """ with open("game.txt", "rb") as file:
     data = pickle.load(file)
