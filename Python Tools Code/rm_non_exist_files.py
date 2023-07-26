@@ -14,7 +14,7 @@ for image_file in image_files:
     # 파일명 중 확장자를 제외한 부분만 추출
     base_filename = os.path.splitext(image_file)[0]
 
-    # label_files의 확장자를 제외한 부분 만 추출하고 .txt를 붙여파일명을 구성
+    # label_files의 확장자를 제외한 부분 만 추출하고 .txt를 붙여 파일명을 구성
     label_file = base_filename + '.txt'
 
     # label_files 리스트에 같은 이름의 파일이 없는 경우
