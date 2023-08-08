@@ -558,3 +558,36 @@ result = a or b
 print(result)  # 출력: [1, 2, 3] """
 
 """ small = b if a > b else a """
+
+""" num = int(input("정수 1개를 입력하시오: "))
+for x in range(1, num+1):
+    if '3' in str(x) or '6' in str(x) or '9' in str(x):
+    # if any([True for i in ['3', '6', '9'] if i in str(x)]): # if만
+    # if any([True if i in str(x) else False for i in ['3', '6', '9']]): # if, else
+    # if any((one_num in str(x)) for one_num in ['3', '6', '9']):
+        print("X", end=' ')
+    else:
+        print(x, end=' ') """
+        
+""" input_list = [1, 3, 5, 6, 10, 15]
+output_list = ["A" if x % 3 == 0 else ("B" if x % 5 == 0 else "C") for x in input_list]
+
+print(output_list)  # 출력: ['C', 'A', 'B', 'A', 'B', 'A'] """
+        
+""" def is_even(number):
+    return number % 2 == 0
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+even_numbers = list(filter(is_even, numbers))
+
+print(even_numbers)  # 출력: [2, 4, 6, 8]
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+even_numbers = list(filter(lambda x: x % 2 == 0, numbers))
+
+print(even_numbers)  # 출력: [2, 4, 6, 8]
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+even_numbers = [x for x in numbers if x % 2 == 0]
+
+print(even_numbers)  # 출력: [2, 4, 6, 8] """
