@@ -99,7 +99,8 @@ with open("game.txt", "rb") as f:
     data = pickle.load(f)
     print(data) """
     
-""" class BlackBox():
+""" # class BlackBox:
+class BlackBox():
     def __init__(self, name, price): # 객체가 생성될 때
         self.name = name
         self.price = price
@@ -108,34 +109,66 @@ with open("game.txt", "rb") as f:
         print(self.name, str(min) + '분 동안 여행 모드 ON')
 
 b1 = BlackBox('까망이', 200000)
-print(b1.name)
+# print(b1.name)
+# print(b1.price)
 
-b1.set_travel_mode(20) # 같은 것
-BlackBox.set_travel_mode(b1, 20) # 같은 것 """
+# b1.set_travel_mode(20) # 같은 것
+# BlackBox.set_travel_mode(b1, 20) # 같은 것 """
 
-""" class SpecialBlackBox(BlackBox):
+""" class SpecialBlackBox(BlackBox): # 상속(Inheritance)
     def special_mode(self):
         print('This is Special Mode')
         
 s1 = SpecialBlackBox('하양이', 300000)
-s1.special_mode() """
+# print(s1.name)
+# print(s1.price)
 
-""" class AnotherBlackBox(BlackBox):
+# s1.special_mode()
+# b1.special_mode()
+
+class SDBlackBox(BlackBox):
     def __init__(self, name, price, sd):
+        # BlackBox.__init__(self, name, price)
         super().__init__(name, price)
         self.sd = sd """
-        
-""" class VideoMaker:
+
+""" class VideoMaker():
     def make(self):
         print('추억용 여행 영상 제작')
-
-class AnotherBlackBox(BlackBox, VideoMaker):
+        
+class AdvancedBlackBox(BlackBox, VideoMaker):
     def __init__(self, name, price, sd):
         super().__init__(name, price)
         self.sd = sd
         
-a = AnotherBlackBox('검정이', 24234, 64)
+a = AdvancedBlackBox('검정이', 24234, 64)
 a.make() """
+
+""" class VideoMaker():
+    def make(self):
+        print('추억용 여행 영상 제작')
+
+class BestBlackBox(BlackBox, VideoMaker):
+    def __init__(self, name, price, sd):
+        super().__init__(name, price)
+        self.sd = sd
+
+    def make(self): # Method Overriding
+        print('추억용 여행 영상을 보정해서 제작')
+        
+h1 = BestBlackBox("피선우", 500000, 256)
+h1.make() """
+
+""" class Calculate:
+    def __init__(self, a, b) :
+        self.a = a
+        self.b = b
+
+    def __str__(self) : 
+        return f'add 함수를 사용해서 {self.a}과 {self.b}을 더할 수 있습니다'
+    
+cal = Calculate(3, 7)
+print(cal) """
     
 """ num1 = 3
 num2= 0
@@ -591,3 +624,24 @@ numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 even_numbers = [x for x in numbers if x % 2 == 0]
 
 print(even_numbers)  # 출력: [2, 4, 6, 8] """
+
+""" for x in range(1, 11, 2):
+    # print(f"{'*'*x:^11}")
+    # print(f"{'*'*x:>11}")
+    # print(f"{'*'*x:<11}")
+    
+    print(f"{'*'*x:-^11}") """
+    
+""" num = 0.12347
+print(f"{num:.4f}") # 0.1235
+
+print(f"{num:10.3f}")
+print(f"{num:^10.3f}")
+print(f"{num:<10.3f}")
+
+print(f"{num:a>10.3f}")
+print(f"{num:a^10.3f}")
+print(f"{num:a<10.3f}") """
+
+""" print(int(float("4.2")))
+print(int("4.2")) # 오류 """
