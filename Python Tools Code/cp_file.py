@@ -1,4 +1,4 @@
-import shutil
+""" import shutil
 
 img_list = ['0/9488401L.png', '1/9967294R.png', '2/9792506L.png', '3/9669124L.png', '4/9559547R.png']
 # img_list = ['9488401L.png', '9967294R.png', '9792506L.png', '9669124L.png', '9559547R.png']
@@ -44,4 +44,31 @@ for file_name in img_list:
         
     for img_dir, model in zip(img_dir_list, model):
         save_dir = f"./Grad CAM (Model)/Fig. 6-10/Optimization/{file_name.split('.')[0]}_{model}.png"
-        shutil.copyfile(img_dir, save_dir)
+        shutil.copyfile(img_dir, save_dir) """
+        
+        
+import shutil
+import os
+
+src_dirs = {
+    "Image Size Original": "Image Size Original",
+    "Image Size Optimization": "Image Size Optimization"
+}
+
+image_files = {
+    "0": "9137709R.png",
+    "1": "9055361R.png",
+    "2": "9057327R.png",
+    "3": "9011053L.png",
+    "4": "9504935L.png"
+}
+
+model_architectures = ["densenet_161", "efficientnet_b5", "efficientnet_v2_s", "regnet_y_8gf", "resnet_101", "resnext_50_32x4d", "shufflenet_v2_x2_0", "wide_resnet_50_2", "ensemble_cam"]
+
+for dir_name, src_dir in src_dirs.items():
+    for model in model_architectures:
+        for grade, img_file in image_files.items():
+            src_file_path = os.path.join("./Grad CAM/", src_dir, model, grade, img_file)
+            dst_file_path = os.path.join("./Grad CAM Revision/", grade, f"{img_file.split('.')[0]}_{model}.png")
+
+            shutil.copy2(src_file_path, dst_file_path)
