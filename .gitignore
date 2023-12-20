@@ -2,7 +2,7 @@
 __pycache__/
 *.py[cod]
 
-*.mp4
-*.pt
-
 .DS_Store
+
+Hyuk/AI DD/data/
+Hyuk/AI DD/results/
