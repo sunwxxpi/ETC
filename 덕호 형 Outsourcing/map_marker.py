@@ -65,10 +65,10 @@ map_ = folium.Map(location=[sorted_coords[0][0], sorted_coords[0][1]],
                   min_zoom=7,
                   max_zoom=20,
                 #   tiles='https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}' # Default
-                #   tiles='http://mt0.google.com/vt/lyrs=s&hl=ko&x={x}&y={y}&z={z}', # Satellite
-                #   tiles='http://mt0.google.com/vt/lyrs=y&hl=ko&x={x}&y={y}&z={z}', # Hybrid
-                #   tiles='https://map.pstatic.net/nrs/api/v1/raster/satellite/{z}/{x}/{y}.jpg?version=5.02', # Satelite
-                  tiles='https://map.pstatic.net/nrb/styles/satellite/1717723233/{z}/{x}/{y}.png?mt=bg.ol.ts.lko', # Hybrid
+                #   tiles='http://mt0.google.com/vt/lyrs=s&hl=ko&x={x}&y={y}&z={z}', # Google Map (Satellite)
+                #   tiles='http://mt0.google.com/vt/lyrs=y&hl=ko&x={x}&y={y}&z={z}', # Google Map (Hybrid)
+                #   tiles='https://map.pstatic.net/nrs/api/v1/raster/satellite/{z}/{x}/{y}.jpg?version=5.02', # NAVER Map (Satelite)
+                  tiles='https://map.pstatic.net/nrb/styles/satellite/1717723233/{z}/{x}/{y}.png?mt=bg.ol.ts.lko', # NAVER Map (Hybrid)
                   attr='(NAVER Map) Made by Sunwoo Pi',
                   font_size='1.5rem')
 
