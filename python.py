@@ -1,42 +1,3 @@
-""" several_line_str = '''꿀꽈배기는
-너무
-맛있어요'''
-print(several_line_str) """
-
-""" str = '...나도..고등학교...'
-str_strip = str.strip('.')
-print(str_strip) """
-
-""" python = '파이썬'
-java = '자바'
-print('개발언어에는 {1}, {0} 등이 있다.'.format(python, java))
-print(f'개발언어에는 {python}, {java} 등이 있다.') """
-
-""" my_list = ['오예스', '몽쉘']
-del my_list[1]
-my_list.append('초코파이')
-my_list.remove('오예스')
-print(my_list) """
-
-""" my_list = ['오예스', '몽쉘']
-a = my_list.pop()
-print(a) """
-
-""" numbers = (1, 2, 3, 4, 5)
-one, two, *others = numbers
-print(others) """
-
-""" my_list = [1, 2, 3, 4, 5]
-new_list = [x+3 for x in my_list if x > 3]
-print(new_list) """
-
-""" def visit(today, *customers):
-    print(today)
-    for customer in customers:
-        print(customer)
-
-visit('2023년 1월 1일', '장발장', '이남수') """
-
 """ message = '나는야 전역변수'
 print(message)
 list1 = []
@@ -53,36 +14,6 @@ no_secret()
 print(message)
 print(list1) """
 
-""" print(1, 2, 3, sep='HaHa')
-print('1'+'2'+'3', sep='HaHa')
-print(1, 2, 3, end='HaHa')
-print('AAAAAAAAA') """
-
-""" f = open('list.txt', 'w', encoding='utf8')
-f.write('김선우\n')
-f.write('피선우\n')
-f.close() """
-
-""" f = open('list.txt', 'r', encoding='utf8')
-for line in f:
-    print(line.rstrip())
-    # print(line, end='')
-f.close()
-
-f = open('list.txt', 'r', encoding='utf8')
-# f.seek(0)
-contents = f.read()
-# contents = f.readline().rstrip()
-# contents = f.readlines()
-print(contents)
-f.close() """
-
-""" with open('list2.txt', 'w', encoding='utf8') as f:
-    f.write('김선우\n')
-    f.write('피선우\n')
-    f.write('김선우\n')
-    f.write('피선우\n') """
-    
 """ import pickle
 
 gameOption = {
@@ -196,22 +127,6 @@ black_chess_num = [chess_num - white_chess_num for white_chess_num, chess_num in
 for i in black_chess_num:
     print(i, end=' ') """
     
-""" first_num = int(input())
-second_num = input()
-
-for i in second_num[::-1]:
-    print(first_num * int(i))
-    
-print(first_num * int(second_num)) """
-
-""" x = int(input())
-y = int(input())
-
-if x > 0:
-    print(1 if y>0 else 4)
-else:
-    print(2 if y>0 else 3) """
-    
 """ a, b = map(int, input().split())
 
 print(format(a/b, '.2f'))
@@ -223,24 +138,6 @@ print('%.2f' %(a/b)) """
 a = list(a)
 
 print(sum(a), f'{sum(a)/len(a):.2f}') """
-    
-""" print(type(123))
-
-if type(123) is int:
-    print("It's int")
-    
-if isinstance(123, int):
-    print("It's int") """
-    
-""" if 3 == 3.0:
-    print(True)
-else:
-    print(False)
-
-if 3 is 3.0:
-    print(True)
-else:
-    print(False) """
     
 """ a = input()
 a = int(a, 16)
@@ -267,30 +164,6 @@ print(any([False, True, False]))
 print(all([False, True, False]))
 print(all(np.array([20, 40, 50]) < 45)) """
 
-""" print(round(12343.123, -1))
-print(round(12343.123, 0))
-print(round(12343.123, 1))
-print(round(12343.125, 2)) # round()에서는 반올림할 때, 5는 내림 처리. 왜냐? 사실 4988877이기 때문. NumPy에서는 올림 처리.
-# 소수 첫 째 자리가 기준 (0) """
-
-""" for number, upper, lower in zip("12345", "ABC", "abcd"):
-    print(number, upper, lower) """
-    
-""" list1 = [1, 2, 3]
-print(list1)
-print(list1.reverse())
-print(list1)
-
-print('-----------')
-
-list1 = [1, 2, 3]
-print(list(reversed(list1)))
-
-print('-----------')
-
-print(range(3))
-print(list(range(3))) """
-
 """ import numpy as np
 
 list1 = [
@@ -307,16 +180,6 @@ y = array1[:, 1] # List가 아닌 Array에서만 가능
 print(list(y)) # List
 print(y.tolist()) # List """
 
-""" list1 = [1, 2, 3]
-print(list1 * 3)
-
-string1 = 'String' # String 객체는 Immutable(불변), string1[3] = 'a' 불가능
-print(string1 * 3)
-
-list1 = [1, 2, 3, 4, 5]
-list2 = [6, 7, 8, 9, 10]
-print(list1 + list2) """
-
 """ import numpy as np
 
 index_array = np.array([2, 4, 5])
@@ -331,67 +194,11 @@ print(a, b, c) """
 print(a)
 print(f'{a:.1f}') """
 
-""" array1 = [[0] * 2 for _ in range(3)] # 올바른 List 초기화 방식
-print(array1)
-array1[1][1] = 1
-print(array1)
-print()
-array2 = [[0] * 2] * 3 # 잘못된 List 초기화 방식
-print(array2)
-array2[1][1] = 1
-print(array2) """
-
-""" list1 = [3, 1, 2, 5, 6, 8, 2, 5]
-print(list1)
-
-list1.append(12)
-print(list1)
-
-list1.reverse()
-print(list1)
-
-list1 = list(reversed(list1))
-print(list1)
-
-list1.sort()
-print(list1)
-
-list1.sort(reverse=True)
-print(list1)
-
-list1.insert(3, 43)
-print(list1)
-
-print(list1.count(5))
-
-list1.remove(2) # 원소 1개만 제거
-print(list1)
-
+"""
 set = {2, 5} # List : [], Tuple : (), Set : {}, Dictionary : {: }
 result = [i for i in list1 if i not in set]
-print(result)
+print(result)"""
 
-list2 = [1, 2, 3]
-list2.append('TikTok')
-print(list2)
-list2.extend('TikTok')
-print(list2) """
-
-""" a, b = 3, 1
-
-dict1 = {'사과': 'Apple',
-         '바나나': 'Banana',
-         '코코넛': 'Coconut',
-         a: b}
-
-print(dict1.keys())
-print(list(dict1.keys()))
-print(dict1.values())
-print(list(dict1.values()))
-
-for key in dict1.keys():
-    print(dict1[key]) """
-    
 """ data1 = set([1, 2, 3, 3, 4, 4, 5])
 print(data1)
 data2 = {1, 2, 3, 3, 4, 4, 5}
@@ -442,11 +249,7 @@ print(list(map(lambda a, b: a + b, list1, list2))) # map() : 각각의 원소 li
 print(type(result))
 print(result) """
 
-""" result = sorted([9, 1, 8, 5, 4]) # .sort() != sorted()
-reverse_result = sorted([9, 1, 8, 5, 4], reverse=True)
-print(result)
-print(reverse_result)
-
+"""
 array1 = [['홍길동', 50], ['이순신', 32], ['아무개', 74]]
 result = sorted(array1, key=lambda x: x[1], reverse=True)
 print(result) """
@@ -487,9 +290,6 @@ print((lambda a, b: gcd(a, b) * (a // gcd(a, b)) * (b // gcd(a, b)))(a, b)) """
 
 """ result = [x * y for x in range(2,10) for y in range(1,10)]
 print(result) """
-
-""" print("\\\\\'")
-print(r"\\'") """
 
 """ from collections import Counter
 
@@ -532,12 +332,6 @@ print(os.getcwd())
 # 5. sys.path에 import 가능한 Module 경로를 추가
 sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(__file__)))) """
 
-""" name = ['psw', 'phw', 'No Haha']
-yearning = [3, 6]
-
-dictionary = dict(zip(name, yearning))
-print(dictionary) """
-
 """ def solution(names, yearning, photos):
     return [sum(yearning[names.index(name)] for name in photo if name in names) for photo in photos]
 
@@ -551,13 +345,6 @@ print(yearning[names.index('psw')]) """
 result = ' '.join(map(str, str_list))
 print(result) """
 
-""" list1 = ["a", "b", "c"]
-list2 = list1
-list3 = list1.copy()
-list1.append("d")
-print(list2)
-print(list3) """
-
 """ cards1 = []
 if len(cards1) > 0 and "haha" in cards1[0]:
 # if "haha" in cards1[0] and len(cards1) > 0:
@@ -570,10 +357,7 @@ else:
 
 list = [[0, 23], [1, 21], [2, 22]]
 list.sort(key=lambda x: x[1])
-print(list)
-
-print(list[-1:-3])
-print(list[-1:]) # 착각하지 말자. 역순으로 처음부터 끝까지가 아니라 마지막 것부터 끝까지이다. """
+print(list)"""
 
 """ import math
 
