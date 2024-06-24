@@ -1,3 +1,3 @@
 # sunwxxpi's ETC Code
 
-My Simple Project & Practice Code
+My Simple Project & Utils Code
