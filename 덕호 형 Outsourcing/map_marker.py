@@ -4,7 +4,7 @@ import pandas as pd
 import folium
 from tqdm import tqdm
 
-# Function to get geocode (latitude, longitude) for a given address using Naver Maps API
+# Function to get geocode (latitude, longitude) for a given address using Naver Map API
 def get_geocode(address, api_keys):
     url = "https://naveropenapi.apigw.ntruss.com/map-geocode/v2/geocode"
     
@@ -35,7 +35,7 @@ def get_geocode(address, api_keys):
         return None, None
 
 # Load API keys from the JSON file
-with open('./naver_maps_api_keys.json') as f:
+with open('./naver_map_api_keys.json') as f:
     api_keys_json = json.load(f)
 
 # File path to the CSV file containing factory addresses
