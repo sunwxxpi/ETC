@@ -6,5 +6,6 @@ __pycache__/
 
 *txt
 *csv
+*xlsx
 
-덕호 형 Outsourcing/naver_maps_api_keys.json
+*_keys.json
